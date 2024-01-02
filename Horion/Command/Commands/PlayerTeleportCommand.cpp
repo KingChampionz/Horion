@@ -50,6 +50,6 @@ bool PlayerTeleportCommand::execute(std::vector<std::string>* args) {
 		return true;
 	}
 	g_Data.getLocalPlayer()->setPos(pos);
-	clientMessageF("[%sHorion%s] %sTeleported to %s", GOLD, WHITE, GREEN, playerName.c_str());
+	clientMessageF("[%sHorion%s] %sTeleported to %s", pos, GOLD, WHITE, GREEN, playerName.c_str());
 	return true;
 }
